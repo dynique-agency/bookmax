@@ -25,6 +25,7 @@
 html {
   scroll-behavior: smooth;
   cursor: none;
+  overflow-x: hidden; /* iOS Safari needs this on html, not just body */
 }
 
 body {
@@ -33,6 +34,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  position: relative; /* required for overflow-x to work on iOS */
+  width: 100%;
 }
 
 /* Hide default cursor everywhere */

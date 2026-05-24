@@ -16,7 +16,7 @@ export default function PageWrapper({ children }: { children: ReactNode }) {
         style={{ scaleX }}
         className="fixed top-0 left-0 right-0 h-[2px] bg-[#B8956A] z-[9999] origin-left"
       />
-      <main>{children}</main>
+      <main style={{ overflowX: 'hidden', width: '100%' }}>{children}</main>
     </>
   )
 }
