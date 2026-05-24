@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #16120E;
+  --ink2: #211C17;
+  --coffee: #7C5C3A;
+  --warm: #B8956A;
+  --sand: #C9AB87;
+  --cream: #F8F4EE;
+  --cream2: #EEE7DC;
+  --cream3: #E3D9CC;
+  --linen: #FDFAF6;
+  --stone: #6E675F;
+  --stone2: #9E9890;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  background: var(--linen);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Hide default cursor everywhere */
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--warm);
+  z-index: 9999;
+  transform-origin: left;
+}
+
+/* Selection */
+::selection {
+  background: var(--warm);
+  color: var(--ink);
+}
