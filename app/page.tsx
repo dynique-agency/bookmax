@@ -18,10 +18,10 @@ export default function Home() {
     <PageWrapper>
       <Nav />
       <Hero />
-      <Marquee />
       <ProblemSection />
-      <BookingCounterSection />
       <FixSection />
+      <BookingCounterSection />
+      <Marquee />
       <ServicesSection />
       <HowItWorks />
       <AboutSection />

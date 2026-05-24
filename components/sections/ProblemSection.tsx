@@ -88,18 +88,6 @@ function EvidenceShowcase() {
             </span>
           </div>
 
-          {/* Location */}
-          <div
-            className="absolute bottom-3 left-3 px-2 py-1 backdrop-blur-sm"
-            style={{ background: 'rgba(22,18,14,0.65)' }}
-          >
-            <span
-              className="text-[8px] tracking-[0.16em] uppercase text-[#6E675F]"
-              style={{ fontFamily: 'Satoshi, sans-serif' }}
-            >
-              B&B · Tuscany, Italy
-            </span>
-          </div>
         </motion.div>
 
         {/* Photo 2 */}
@@ -134,18 +122,6 @@ function EvidenceShowcase() {
             </span>
           </div>
 
-          {/* Location */}
-          <div
-            className="absolute bottom-3 left-3 px-2 py-1 backdrop-blur-sm"
-            style={{ background: 'rgba(22,18,14,0.65)' }}
-          >
-            <span
-              className="text-[8px] tracking-[0.16em] uppercase text-[#6E675F]"
-              style={{ fontFamily: 'Satoshi, sans-serif' }}
-            >
-              Agriturismo · Umbria, Italy
-            </span>
-          </div>
         </motion.div>
       </div>
 
